@@ -37,13 +37,19 @@ class HelloWorld {
   public interface IShow{
       void Show();
   }
+  public interface IMethod1{
+      void Method1();
+  }
   
-  public class ImplementInterface : IDisplay , IShow{
+  public class ImplementInterface : IDisplay , IShow , IMethod1{
       public void Display(){
           Console.WriteLine("Display In Interface 1 Class");
       }
       public void Show(){
           Console.WriteLine("Show In Interface 1 Class");
+      }
+      public void Method1(){
+          Console.WriteLine("Method In Interface 1 Class");
       }
   }
 }
