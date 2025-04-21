@@ -38,7 +38,7 @@ class HelloWorld {
       void Show();
   }
   public interface IMethod1{
-      void Method1():
+      void Method1();
   }
   
   public class ImplementInterface : IDisplay , IShow , IMethod1{
