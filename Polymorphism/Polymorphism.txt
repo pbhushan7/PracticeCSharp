@@ -1,0 +1,31 @@
+using System;
+class HelloWorld {
+  static void Main() {
+    
+    DerivedClass o = new DerivedClass();
+    o.Display("Display11");
+    
+  }
+    public class PolyMorphismm
+    {
+        //public virtual void Display()
+        //{
+        //    Console.WriteLine("Display is called");
+        //}
+        public void Display(string Str)
+        {
+            Console.WriteLine("Display is called");
+        }
+    }
+    public class DerivedClass : PolyMorphismm 
+    {
+        //public override void Display()
+        //{
+        //    Console.WriteLine("Display in derived class called");
+        //}
+        public void Display()
+        {
+            Console.WriteLine("Display in derived class called");
+        }
+    }
+}
